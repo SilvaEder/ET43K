@@ -52,8 +52,8 @@ plot(x=data[,3],y=data[,2],type="l",ylim=c(-.05,.01),axes=FALSE,
 filtered_rows <- data$Volts == 8
 rows <- data[filtered_rows,]
 
-png("Rplot01.png", res = 300, width = 828, height = 548)
-hist(rows[,2],xlab="Força (N)",ylab="Frequência",main="Motor 1 com tensão igual a 8 Volts",col="#ADD8E6")
+png("Rplot01.png", res = 300, width = 660, height = 446)
+hist(rows[,2],xlab="Força (N)",ylab="Frequência",main="Motor 1 - 8 Volts",col="#ADD8E6")
 dev.off()
 
 median(rows[,2])
@@ -142,7 +142,7 @@ if(p_valor>0.1){
   print("Os dados não provém de uma população Normal")
 }
 #Gráficos
-png("Rplot02.png", res = 300, width = 828, height = 548)
+png("Rplot01.png", res = 300, width = 660, height = 446)
 qqnorm(erro,pch=19,col="darkblue")
 qqline(erro,col="red")
 dev.off()
