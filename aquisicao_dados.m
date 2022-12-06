@@ -1,0 +1,1 @@
+writematrix(Motor1_dados1,'Motor1_dados1.csv')
