@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-dados1 = pd.read_csv('~/Downloads/Motor1_dados1.csv', header=None)
+dados1 = pd.read_csv('https://raw.githubusercontent.com/SilvaEder/ET43K/main/Motor1_dados1.csv',encoding='utf-8')
 func = pd.read_json('https://raw.githubusercontent.com/SilvaEder/ET43K/main/motor1.json',encoding='utf-8')
 resi = pd.read_json('https://raw.githubusercontent.com/SilvaEder/ET43K/main/resi.json',encoding='utf-8')
 moda = pd.read_json('https://raw.githubusercontent.com/SilvaEder/ET43K/main/moda.json',encoding='utf-8')
